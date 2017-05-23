@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass'
+gem 'bootstrap-datepicker-rails'
 gem 'activerecord-session_store'
 
 # Use Capistrano for deployment

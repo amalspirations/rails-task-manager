@@ -29,7 +29,6 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
     redirect_to tasks_path
-
   end
 
   private
@@ -39,7 +38,7 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:name, :responsible, :due_date)
+    params.require(:task).permit(:name, :responsible, :due_date, :completed)
   end
 
 end

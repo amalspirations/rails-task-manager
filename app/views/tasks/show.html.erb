@@ -1,7 +1,7 @@
 <h3><%= @task.name %></h3>
 <p><%= @task.responsible %></p>
 <p><%= @task.due_date %></p>
-<p><%= @task.completed %></p>
+<p><%= @task.completed == true ? "Completed" : "Pending" %></p>
 
 <%= link_to 'All tasks', tasks_path %>
 <%= link_to 'Edit this task', edit_task_path(@task) %>
