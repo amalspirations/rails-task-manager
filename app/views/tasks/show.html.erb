@@ -1,0 +1,12 @@
+<h3><%= @task.name %></h3>
+<p><%= @task.responsible %></p>
+<p><%= @task.due_date %></p>
+<p><%= @task.completed %></p>
+
+<%= link_to 'All tasks', tasks_path %>
+<%= link_to 'Edit this task', edit_task_path(@task) %>
+<%= link_to "Delete this task", task_path(@task), method: :delete %>
+
+
+
+
